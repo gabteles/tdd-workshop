@@ -1,19 +1,9 @@
-// ─────────────────────────────────────────────────────────────────────────────
-// Part 2: UserService — Asynchronous functions
-//
-// Your job: make all the tests in tests/02-user-service.test.ts pass.
-//
-// UserService depends on an ApiClient to fetch data over the network.
-// In tests, we NEVER hit a real network — we mock the ApiClient instead.
-// ─────────────────────────────────────────────────────────────────────────────
-
 export interface User {
   id: number;
   name: string;
   email: string;
 }
 
-// This is the dependency we'll mock in tests
 export interface ApiClient {
   get(url: string): Promise<unknown>;
 }
@@ -34,7 +24,7 @@ export class UserService {
 
   async fetchUserName(id: number): Promise<string> {
     // TODO: fetch a user and return only their name (formatted as "First Last")
-    // Reuse formatName from Part 1 if you like!
+    // Reuse formatName from Part 1
     throw new Error("Not implemented");
   }
 }

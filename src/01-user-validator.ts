@@ -1,22 +1,19 @@
-// ─────────────────────────────────────────────────────────────────────────────
-// Part 1: UserValidator — Synchronous functions
-//
-// Your job: make all the tests in tests/01-user-validator.test.ts pass.
-// Do NOT look at the tests first if you want the full TDD experience!
-// ─────────────────────────────────────────────────────────────────────────────
-
 export function isValidEmail(email: string): boolean {
-  // TODO: implement
+  // A valid email has:
+  // - Exactly one @ symbol
+  // - At least one character before the @
+  // - At least one character after the @
   throw new Error("Not implemented");
 }
 
 export function isValidAge(age: number): boolean {
-  // TODO: implement
+  // A valid age is a positive integer less than or equal to 120
   throw new Error("Not implemented");
 }
 
-export function formatName(firstName: string, lastName: string): string {
-  // TODO: implement
+export function formatName(unformattedName: string): string {
+  // A formatted name has the first letter of each name capitalized and the rest lowercase, joined by a space
+  // It must have at least two parts (first and last name)
   throw new Error("Not implemented");
 }
 
@@ -25,6 +22,5 @@ export function isStrongPassword(password: string): boolean {
   // - At least 8 characters
   // - At least one uppercase letter
   // - At least one number
-  // TODO: implement
   throw new Error("Not implemented");
 }
